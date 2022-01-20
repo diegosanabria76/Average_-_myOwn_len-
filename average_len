@@ -1,0 +1,23 @@
+def promedio(lista):#primero suma los elementos de la lista
+    # y luego utiliza el metodo len, para dividir entre el numero de elementos
+    # y poder entregar el promedio
+    suma = 0
+    for num in lista:
+        suma += num
+    promedio = suma/ len(lista)
+    print("la suma es {} el promedio es {}".format(suma,promedio))
+
+def contar(lista):#cuenta los elementos de la lista, es
+    #como mi propio metodo len()
+    count = 0
+
+    for i in lista:
+        count += 1
+    print(count)
+    
+    
+#TEST: para comprobar que el metodo puede remplazar al len()    
+x=[1,2,3,23,23,34,45,56,67,90]
+contar(x)
+
+print(len(x))
